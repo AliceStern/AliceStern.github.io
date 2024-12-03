@@ -1,8 +1,8 @@
-// Управление музыкой
 const music = document.getElementById('background-music');
+const audioActivation = document.getElementById('audio-activation');
 
-// Начинает проигрывать музыку после загрузки
-music.volume = 0.5; // Установим громкость
-music.play().catch((error) => {
-    console.log("Ошибка при проигрывании музыки:", error);
+// Активация звука по нажатию
+audioActivation.addEventListener('click', () => {
+    music.play(); // Запускаем музыку
+    audioActivation.classList.add('hidden'); // Скрываем область активации
 });

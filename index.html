@@ -8,6 +8,11 @@
 </head>
 <body>
     <div class="container">
+        <!-- Область для активации музыки -->
+        <div id="audio-activation" class="audio-activation">
+            Tap to Start Music
+        </div>
+        
         <!-- Кнопки Music и Read -->
         <a href="https://m.soundcloud.com/emmy-von-teufelsstadt" target="_blank" class="music-button">Music</a>
         <a href="https://www.wattpad.com/user/AliceStern" target="_blank" class="read-button">Read</a>
@@ -18,7 +23,7 @@
             <div class="button">X</div>
         </a>
     </div>
-    <audio id="background-music" loop autoplay>
+    <audio id="background-music" loop>
         <source src="assets/music.mp3" type="audio/mpeg">
     </audio>
     <script src="script.js"></script>
